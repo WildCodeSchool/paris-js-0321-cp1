@@ -7,7 +7,7 @@ main {
   justify-content: flex-end;
   width: 100%;
   align-items: center;
-}
+}  
 
 .logo {
   border-radius: 5px;
@@ -23,7 +23,7 @@ main {
   color: #39424e;
 }
 
-.array {
+.array { 
   display: flex;
   justify-content: center;
   border-radius: 5px;
