@@ -19,7 +19,12 @@ Autre rappel: Tu dois utiliser l'opérateur modulo (%) pour vérifier si un nomb
 */
 
 function isLeapYear(year) {
-  // TODO
+  if (year%400 === 4){
+    return true
+  }
+  else {
+    return false
+  }
 }
 
 module.exports = isLeapYear;

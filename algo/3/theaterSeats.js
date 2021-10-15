@@ -21,7 +21,24 @@ exemple :
 */
 
 function theaterSeats() {
-  // TODO
+  let seats = ['1', '2', '3', '4', '5', '6', '7', '8','26'];
+    let rows = [1, 2, 3, 4, 5, 6, 7, 8, 100];
+
+    const theater = [];
+    
+    for(let i = 0; i<seats.length; i++){
+        let arrayOne = [];
+        // console.log (columns[i])
+            for (let j = 0; j < rows.length; j++){
+            // console.log(rows[j]);
+            arrayOne.push(`${seats[i]} - ${rows[j]}`)
+        }
+        theater.push(arrayOne)
+    } 
+    console.log(theater)
+
+    return theater;
 }
+
 
 module.exports = theaterSeats;
