@@ -21,7 +21,15 @@ exemple :
 */
 
 function theaterSeats() {
-  // TODO
+  const array = [];
+  for (i=1; i<27; i++){
+    const subArray = [];
+    for(j=1; j<101; j++){
+      subArray.push(`${i}-${j}`);
+    }
+    array.push(subArray);
+  };
+  return array;
 }
 
 module.exports = theaterSeats;
