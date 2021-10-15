@@ -1,10 +1,3 @@
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  align-items: center;
-}
-
 .pink-bg {
   background-color: pink;
 }
@@ -117,4 +110,21 @@ button {
   background-color: transparent;
 }
 
-/* CODE HERE */
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+}
+
+.introduction{
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+.desktop{
+  display: none;
+}
+}
+
+  /* CODE HERE */
