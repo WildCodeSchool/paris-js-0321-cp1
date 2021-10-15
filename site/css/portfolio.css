@@ -118,3 +118,9 @@ button {
 .first-banner {
   text-align: center;
 }
+
+@media (max-width:700px) {
+  .desktop {
+    display: none;
+  }
+}
