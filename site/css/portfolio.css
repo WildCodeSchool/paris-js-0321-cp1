@@ -120,11 +120,27 @@ button {
 
 .title-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 #avatar {
   margin: 0 auto;
   width: auto;
+}
+
+
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width : 700px) {
+  .desktop {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  
 }
