@@ -23,7 +23,18 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "
 */
 
 function sumArr(arrayA, arrayB) {
-  // TODO
+  let arrayAB = []
+  while (arrayA.length || arrayB.length) {
+    let sum = 0
+    if (arrayA.length) {
+      sum += Number(arrayA.shift())
+    }
+    if (arrayB.length) {
+      sum += Number(arrayB.shift())
+    }
+    arrayAB.push(sum.toString())
+  }
+  return arrayAB
 }
 
 module.exports = sumArr;
