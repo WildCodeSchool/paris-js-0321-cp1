@@ -15,6 +15,9 @@ thirdAngle(20, 80) doit renvoyer 80
 */
 
 function thirdAngle(a, b) {
+  const sum=a+b;
+  const newAngle=180-sum;
+  return newAngle;
   // TODO
 }
 
