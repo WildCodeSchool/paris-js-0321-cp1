@@ -21,7 +21,7 @@ exemple :
 */
 
 function theaterSeats() {
-  let seats = ['1', '2', '3', '4', '5', '6', '7', '8','26'];
+  let seats = [1, 2, 3, 4, 5, 6, 7, 8, 100];
     let rows = [1, 2, 3, 4, 5, 6, 7, 8, 100];
 
     const theater = [];
