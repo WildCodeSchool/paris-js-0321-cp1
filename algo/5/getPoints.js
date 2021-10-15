@@ -41,6 +41,9 @@ const scores = [
 
 function getPoints(array) {
   // TODO
+  
+
+  return 
 }
 
 module.exports = getPoints;

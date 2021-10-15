@@ -21,7 +21,7 @@ exemple :
 */
 
 function theaterSeats() {
-  // TODO
+   
 }
 
 module.exports = theaterSeats;
