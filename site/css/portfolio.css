@@ -25,6 +25,7 @@
 
 .desktop {
   margin: 80px 0 -5px 0;
+  display: none;
 }
 
 .skills {
@@ -74,6 +75,7 @@ img {
 
 .projects a {
   color: #750ff7;
+  
 }
 
 p {
@@ -111,3 +113,42 @@ button {
 }
 
 /* CODE HERE */
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.banner-container{
+display: flex;
+flex-direction : column;
+align-items: center;
+}
+
+.desktop{
+  text-align: center;
+}
+
+.no-associated{
+  color: #750ff7;
+  opacity: 0.33;
+}
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 700px) { /*ce qui change en desktop*/
+
+  .desktop{
+    display: block;
+  }
+  .skills{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  } 
+}
