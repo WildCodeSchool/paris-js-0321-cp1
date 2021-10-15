@@ -129,11 +129,11 @@ button {
   width: auto;
 }
 
-
-
 .desktop {
   display: none;
 }
+
+
 
 @media screen and (min-width : 700px) {
   .desktop {
@@ -141,6 +141,9 @@ button {
     justify-content: center;
   }
 
+  .skills {
+    display: flex;
+    justify-content: space-around;
+  }
 
-  
 }
