@@ -1,3 +1,10 @@
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+}
+
 .pink-bg {
   background-color: pink;
 }
