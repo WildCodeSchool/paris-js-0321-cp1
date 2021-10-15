@@ -7,3 +7,8 @@ newAvatarImage.addEventListener('click', function(){
   
   
   })
+
+  const button = document.getElementById("buttonName")
+  button.addEventListener('click', function() {
+    window.prompt("Enter your name");
+})
