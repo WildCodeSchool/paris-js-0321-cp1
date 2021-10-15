@@ -149,6 +149,10 @@ button {
   background-color: #750ff7;
 }
 
+#avatar-picture:hover {
+  cursor: pointer;
+}
+
 @media (max-width:700px) {
   .projects {
     flex-direction: row;
