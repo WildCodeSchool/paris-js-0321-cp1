@@ -126,6 +126,10 @@ button {
   opacity: 0.5;
 }
 
+.introduction{
+  text-align: center;
+}
+
 @media (max-width: 700px){
   .desktop img{
     display: none;
