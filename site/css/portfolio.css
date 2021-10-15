@@ -111,3 +111,62 @@ button {
 }
 
 /* CODE HERE */
+
+.navbar {
+display: flex;
+justify-content: space-between;
+}
+
+
+
+.top-banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-banner img {
+  padding : 2em;
+}
+
+.desktop {
+  display: flex;
+  align-self: center;
+}
+
+.disabled {
+  opacity: 0.4;
+}
+
+@media screen and (min-width : 700px) {
+  .skills{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .column{
+    width: 100%;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+@media screen and (max-width : 700px) {
+  .introduction{
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-flow: wrap column-reverse;
+  }
+
+  .projects {
+    display: flex;
+    flex-flow: wrap row;
+  }
+}
