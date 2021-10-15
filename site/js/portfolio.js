@@ -11,10 +11,17 @@ console.log(avatar);
 })
 
 
-
-let name = document.getElementById('name');
-    prompt("What's your name ?");
-    name.innerHTML = "Je sais que ça ne marche pas et j'avais mal compris l'exercice :/ ";
+function changeColor (){
+    let name = prompt("What's your name ?");
+    name.innerHTML = "name";
     if (name != "Matt"){
         document.getElementById("name").style.color = "#FFFFFF";
     }
+}
+
+function turnPink(){
+    let name = prompt("New color");
+    document.querySelector('pink').style.backgroundColor = "#750ff7";
+}
+
+

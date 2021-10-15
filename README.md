@@ -1,3 +1,6 @@
+Sorry, i didn't went really far in the checkpoint : I was fed up at the end of this exercise :/ 
+I will continue and try to end it by the week end... 
+
 # Checkpoint 1 - JS
 
 Your 1st checkpoint !
