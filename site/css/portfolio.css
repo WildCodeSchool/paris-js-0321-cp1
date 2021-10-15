@@ -111,3 +111,76 @@ button {
 }
 
 /* CODE HERE */
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar .logo {
+  position:left;
+  margin-right: 85em;
+}
+
+.first-banner {
+  margin-top: 5rem;
+}
+
+.first-banner h1 {
+  margin-bottom: 3rem;
+}
+
+.first-banner p {
+  margin-bottom: 3rem;
+}
+
+.first-banner .avatar {
+  margin-left: 45em;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.skills {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  width: 50vw;
+  height: 50vh;
+}
+
+/* OPACITY on <a> */
+.disabled {
+  opacity: 0.5;
+}
+
+.projects {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 25vw;
+}
+
+
+/*  MEDIA QUERIES   */
+
+@media screen  and (max-width: 700px) {
+  .desktop img {
+    display: none;
+  }
+  .skills {
+    display: block;
+    justify-content: center;
+  }
+}

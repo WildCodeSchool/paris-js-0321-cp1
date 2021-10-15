@@ -22,8 +22,21 @@ sumArr( ["2", "7", "3"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "12"]
 sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "12", "8", "2"]
 */
 
+ const arrayA = [["1", "2", "3"], ["2", "4", "1"]];
+ const arrayB = [["2", "7", "3"], ["2", "4", "9"]];
+
 function sumArr(arrayA, arrayB) {
-  // TODO
+  let newArray = [];
+  for(let i = 0; i < arrayA.length; i++) {
+    newArray += arrayA[i]; {
+      for(let j = 0; j < arrayB.length; j++) {
+        newArray += arrayB[j]
+      }
+    }
+  }
+  sumArr();
+  console.log(newArray[[i] + [j]]);
+
 }
 
 module.exports = sumArr;

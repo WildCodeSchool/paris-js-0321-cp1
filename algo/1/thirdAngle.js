@@ -14,8 +14,14 @@ thirdAngle(90, 30) doit renvoyer 60
 thirdAngle(20, 80) doit renvoyer 80
 */
 
-function thirdAngle(a, b) {
-  // TODO
+function thirdAngle(a, c) {
+  if (a + b + c === 180) {
+    return c;
+  } else {
+    return "The value of C is incorrect"
+  }
 }
+
+thirdAngle();
 
 module.exports = thirdAngle;

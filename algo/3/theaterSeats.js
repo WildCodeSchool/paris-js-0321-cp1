@@ -20,8 +20,24 @@ exemple :
 ] 
 */
 
-function theaterSeats() {
-  // TODO
+const array= [
+  ['1-1', '1-2', '1-3', '1-100'], 
+  ['2-1', '2-2', '2-3',  '2-100'],
+  ... 
+  ['26-1', '26-2', '26-3',  '26-100'],
+];
+
+const theaterSeats = () => {
+  for(let i = 0; i < array.length; i++) {
+    let newArray = [array.push[i]]; {
+      for(let j = 0; j < newArray.length; j++) {
+        let finalArray = [newArray.push[j]];
+      }
+    }
+  }
+  console.log(finalArray);
 }
+
+theaterSeats();
 
 module.exports = theaterSeats;

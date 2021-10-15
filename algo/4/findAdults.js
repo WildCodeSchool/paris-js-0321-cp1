@@ -33,8 +33,13 @@ const persons = [
   { name: 'Penelope Cruz', age: 47, sex: 'female' },
 ];
 
+let arrayMen = [];
+let arrayWomen = [];
+
 function findAdults(arr) {
-  // TODO
+  for(let i = 0; i < arrayMen.length; i++) {
+    let arrayMen = [persons.push()]
+  }
 }
 
 module.exports = findAdults;
