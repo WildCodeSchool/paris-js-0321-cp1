@@ -1,7 +1,15 @@
 const avatarPicture = document.getElementById('avatar-picture')
+let defaultPicture = true
 
 avatarPicture.addEventListener("click", function() {
-    avatarPicture.src = './image/avatar-bis.svg'
+    if (defaultPicture){
+        avatarPicture.src = './image/avatar-bis.svg'
+        defaultPicture = false
+    }
+    else {
+        avatarPicture.src = './image/avatar.png'
+        defaultPicture = true
+    }
 })
 
 const nameText = document.getElementById('name')
