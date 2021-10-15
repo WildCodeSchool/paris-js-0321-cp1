@@ -22,6 +22,12 @@ exemple :
 
 function theaterSeats() {
   // TODO
+
+  for (i = 0; i < rows; i++){
+    for (j = 0; j < cols; j++){
+    matrix[i][j] = 1;
+    cout << matrix[i][j] << endl;
+    }
 }
 
 module.exports = theaterSeats;

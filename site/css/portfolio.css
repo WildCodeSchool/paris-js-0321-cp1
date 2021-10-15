@@ -70,6 +70,8 @@
 
 img {
   max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 .projects a {
@@ -111,3 +113,10 @@ button {
 }
 
 /* CODE HERE */
+
+.menu {
+  background-color: red;
+  right: 0;
+position: absolute;
+}
+

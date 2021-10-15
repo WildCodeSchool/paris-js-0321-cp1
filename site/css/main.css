@@ -20,6 +20,7 @@ a {
 
 .logo {
   max-height: 3rem;
+  margin: initial;
 }
 
 #name {

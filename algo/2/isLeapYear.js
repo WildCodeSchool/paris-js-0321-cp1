@@ -20,6 +20,5 @@ Autre rappel: Tu dois utiliser l'opérateur modulo (%) pour vérifier si un nomb
 
 function isLeapYear(year) {
   // TODO
-}
 
-module.exports = isLeapYear;
+  module.exports = isLeapYear;
