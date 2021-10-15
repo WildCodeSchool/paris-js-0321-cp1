@@ -40,7 +40,17 @@ const scores = [
 ];
 
 function getPoints(array) {
-  // TODO
+  let points = 0
+  for (let score of array) {
+    score = score.split(':')
+    if (score[0] == score[1]) {
+      points++
+    }
+    else if (score[0] > score[1]) {
+      points+=3
+    }
+  }
+  return points
 }
 
 module.exports = getPoints;
