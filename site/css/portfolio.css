@@ -6,6 +6,10 @@
   color: pink;
 }
 
+.purple-bg {
+  background-color: #750ff7 ;
+}
+
 .purple-text {
   color: #750ff7;
 }
@@ -151,9 +155,6 @@ button {
   justify-content: space-around;
 }
 
-.change-name {
-  background-color: pink;
-}
 
 @media screen and (max-width: 700px){
   .introduction {

@@ -1,7 +1,9 @@
 const avatar = document.getElementById("avatar");
 const btnChangeName = document.getElementById("btnChangeName")
 const name = document.getElementById("name")
-const description = document.getElementsByClassName("description")[0]
+
+const elementsPinkBg = document.querySelectorAll(".pink-bg")
+const elementsPinkText = document.querySelectorAll(".pink-text")
 
 
 avatar.addEventListener("click", () => {
@@ -13,7 +15,14 @@ btnChangeName.addEventListener("click", () => {
     const userName = prompt("Enter your name: ")
     name.innerHTML = userName
     name.style.color = "white"
-    description.classList.remove("pink-bg")
-    description.style.backgroundColor = newBgColor
-    btnChangeName.style.backgroundColor = newBgColor
+    
+    for(let i = 0; i < elementsPinkBg.length; i++) {
+        elementsPinkBg[i].classList.remove("pink-bg")
+        elementsPinkBg[i].classList.add("purple-bg")
+    }
+
+    for(let i = 0; i < elementsPinkText.length; i++) {
+        elementsPinkText[i].classList.remove("pink-text")
+        elementsPinkText[i].classList.add("purple-text")
+    }
 } )
