@@ -22,18 +22,18 @@ nameButton.onclick = () => changeName();
     
 
 function changeName() {
-    console.log(background);
     const newName = prompt('Enter a new name:')
+    const newColor = prompt('Enter a new color:')
     defaultName.innerHTML = `${newName}`;
     defaultName.style.color = 'white';
     for (i = 0; i < background.length; i++) {
-        background[i].style.backgroundColor = '#750ff7';
+        background[i].style.backgroundColor = `${newColor}`;
     }
     for (i = 0; i < pinkText.length; i++) {
-        pinkText[i].style.color = '#750ff7';
+        pinkText[i].style.color = `${newColor}`;
     }
     for (i = 0; i < link.length; i++) {
-        link[i].style.color = '#750ff7';
+        link[i].style.color = `${newColor}`;
     }
 
 
