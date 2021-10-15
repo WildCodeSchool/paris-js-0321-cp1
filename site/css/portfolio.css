@@ -31,6 +31,8 @@
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
+  columns: 2;
+  flex-direction: row-reverse;
 }
 
 .column {
@@ -42,16 +44,19 @@
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
+  
 }
 
 .column:first-child {
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
+ 
 }
 
 .column:last-child {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+ 
 }
 
 .column ul {
@@ -75,6 +80,10 @@ img {
 .projects a {
   color: #750ff7;
 }
+.projects a.disabled {
+  opacity: 0.2;
+}
+
 
 p {
   padding-left: 15px;
@@ -111,3 +120,16 @@ button {
 }
 
 /* CODE HERE */
+@media screen and (max-width: 700px){
+  .desktop .img1  {
+    display: none;
+  }
+  .skills {
+    margin-top: -30px;
+    border-radius: 12px;
+    padding: 0 10%;
+    columns: 1;
+  
+  }
+
+}

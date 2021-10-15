@@ -21,14 +21,26 @@
         </div>
       </nav>
     </header>
+
     <main class="container">
+      
+      <div class="avatar">
+        <h2>MON AVATAR FAIT DU CSS / JS </h2>
+        <p>
+          Moi, avant tout contact avec le code ( Grand aperçu )
+          En tant que développeur
+        </p>
+        <img id="toggleImage" src="image/avatar.png" onclick="toggleImage()"; class="avatar"/>
+       
+      </div>
+      
       <!-- TODO: First banner with title, descriptiona and avatar-->
       <!-- You can use the avatar image on the image folder -->
 
       <!-- desktop image -->
       <section class="introduction">
         <figure class="desktop">
-          <img src="image/desktop.svg" alt="desktop" />
+          <img class="img1" src="image/desktop.svg" alt="desktop" />
         </figure>
       </section>
 
@@ -44,6 +56,9 @@
             naturally curious, and perpetually working on improving my chops one
             problem at a time.
           </p>
+            <button id="buttonModify" onclick="nameModify()">
+              Modify Text and Color
+            </button>
         </div>
 
         <!-- Bloc of list of skill front end and back end -->
