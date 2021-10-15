@@ -10,5 +10,6 @@ newAvatarImage.addEventListener('click', function(){
 
   const button = document.getElementById("buttonName")
   button.addEventListener('click', function() {
-    window.prompt("Enter your name");
+    let answer = window.prompt("Enter your name");
+    document.getElementById("name").innerHTML = answer
 })
