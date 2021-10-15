@@ -15,7 +15,11 @@ thirdAngle(20, 80) doit renvoyer 80
 */
 
 function thirdAngle(a, b) {
-  // TODO
+  if {
+    a+b>=180 || a-b<=0
+  } thirdAngle = false
+  else return 180-a-b;
 }
 
 module.exports = thirdAngle;
+

@@ -21,7 +21,9 @@ exemple :
 */
 
 function theaterSeats() {
-  // TODO
+  array1['1', '2', '3', ..., '200']
+  array2['1', '2', '3', ...,'26']
+
 }
 
 module.exports = theaterSeats;
