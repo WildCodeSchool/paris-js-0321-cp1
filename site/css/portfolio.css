@@ -133,6 +133,11 @@ button {
   display: none;
 }
 
+.skills {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 
 
 @media screen and (min-width : 700px) {
@@ -144,6 +149,7 @@ button {
   .skills {
     display: flex;
     justify-content: space-around;
+    flex-direction: row-reverse;
   }
 
 }
