@@ -13,7 +13,8 @@ const description = document.querySelector('.description');
 const defaultName = document.getElementById('name');
 const background = document.getElementsByClassName('pink-bg');
 const nameButton = document.createElement('button');
-const pinkText = document.getElementsByClassName('pink-text')
+const pinkText = document.getElementsByClassName('pink-text');
+const link = document.getElementsByTagName('a');
 nameButton.classList.add('nameButton');
 nameButton.innerHTML = 'Change Name';
 description.appendChild(nameButton);
@@ -31,6 +32,11 @@ function changeName() {
     for (i = 0; i < pinkText.length; i++) {
         pinkText[i].style.color = '#750ff7';
     }
+    for (i = 0; i < link.length; i++) {
+        link[i].style.color = '#750ff7';
+    }
+
+
 
   
     
