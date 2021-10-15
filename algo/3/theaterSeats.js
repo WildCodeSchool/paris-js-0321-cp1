@@ -22,6 +22,13 @@ exemple :
 
 function theaterSeats() {
   // TODO
+  let x = [];
+  let y= [];
+  for(let i=1;i<=26;i++){
+    for(let j=1;j<=100;j++){
+      tab[i][j] = `${i}-${j}`;
+    }
+  }
 }
 
 module.exports = theaterSeats;

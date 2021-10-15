@@ -15,6 +15,6 @@ selectName.addEventListener("click", function () {
   let myName = prompt("Enter your name ");
   myNameName.textContent = `${myName}`;
 
-  let myOtherColor = document.querySelector(".description pink-bg");
-   myOtherColor.style.backgroundColor = '${myOtherColor}';
+  let myOtherColorDiv = document.querySelector(".description pink-bg");
+   myOtherColorDiv.style.backgroundColor = `${myColor}`;
 });
