@@ -10,7 +10,11 @@ console.log(avatar);
     avatar.alt="picture of a second avatar"
 })
 
-const name = prompt("What's your name ?");
-name.innerHTML(`${prompt.name}`);
 
 
+let name = document.getElementById('name');
+    prompt("What's your name ?");
+    name.innerHTML = "Je sais que ça ne marche pas et j'avais mal compris l'exercice :/ ";
+    if (name != "Matt"){
+        document.getElementById("name").style.color = "#FFFFFF";
+    }
