@@ -26,7 +26,7 @@ function theaterSeats() {
       for (let i=0;i<100;i++){
         const row=[]; 
         for (let j=0; j<100;j++){
-          row.push(`${numberOne[i]} - ${numberTwo[j]}`);
+          row.push (`${numberOne[i]} - ${numberTwo[j]}`);
           
           }
 theaterSeats.push(row);
