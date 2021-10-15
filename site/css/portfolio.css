@@ -111,3 +111,10 @@ button {
 }
 
 /* CODE HERE */
+.menu {
+  margin: auto 0 auto auto;
+}
+
+.first-banner {
+  text-align: center;
+}
