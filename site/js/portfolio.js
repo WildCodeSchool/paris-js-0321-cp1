@@ -42,3 +42,15 @@ frontDevToolsButton.addEventListener('click', function() {
         frontDevToolsList.appendChild(item)
     }
 })
+
+const backDevToolsList = document.getElementById('dev-tools-back-list')
+const backDevInput = document.getElementById('newItem')
+const form = document.getElementById('form')
+
+form.onsubmit = function(event) {
+    event.preventDefault()
+    const newItem = document.createElement("li")
+    newItem.innerHTML = backDevInput.value
+    backDevToolsList.appendChild(newItem);
+    backDevInput.value = "";
+}
