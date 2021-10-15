@@ -151,4 +151,15 @@ align-items: center;
     flex-direction: row-reverse;
     justify-content: center;
   } 
+
+  .descrition-btn{
+    background-color: rgb(228, 108, 128) ;
+    color: white;
+    border-color: white;
+    border-style:double;
+    border-width: 0.1em;
+    border-radius: 45%;
+    
+    
+  }
 }
