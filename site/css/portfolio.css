@@ -1,3 +1,39 @@
+/*  - - - Navbar - - -  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+/*  - - - Intro - - -  */
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introduction .avatar {
+  max-width: 20vh;
+  margin: auto;
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .desktop {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 -5px 0;
+  }
+}
+
+/*  - - - Presentation - - -  */
 .pink-bg {
   background-color: pink;
 }
@@ -23,13 +59,12 @@
   text-align: center;
 }
 
-.desktop {
-  margin: 80px 0 -5px 0;
-}
-
+/*  - - - Skills - - -  */
 .skills {
-  margin-top: -30px;
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -30px;
   padding: 0 10%;
 }
 
@@ -42,6 +77,7 @@
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
+  width: 50%;
 }
 
 .column:first-child {
@@ -59,6 +95,18 @@
   padding: 0;
 }
 
+#back-skill{
+  order: 1;
+}
+@media screen and (min-width: 700px) {
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/*  - - - Projects - - -  */
 .box {
   width: 25%;
   padding: 30px;
@@ -109,5 +157,3 @@ button {
 .modify-btn {
   background-color: transparent;
 }
-
-/* CODE HERE */
