@@ -141,6 +141,10 @@ button {
   width: 100%;
 }
 
+.disabled {
+  opacity: .5;
+}
+
 @media screen and (max-width: 700px){
   .introduction {
     display: none;
