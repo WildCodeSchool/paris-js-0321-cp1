@@ -111,3 +111,81 @@ button {
 }
 
 /* CODE HERE */
+.menu{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+}
+
+.avatar01{
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+
+.desktop{
+  display: flex;
+  justify-content: center;
+}
+
+.skills{
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+
+
+
+
+
+.enfant1, .enfant2{
+  width: 49%;
+}
+
+.column{
+  height: 50vh;
+}
+
+.disabled {
+  opacity: 0.4;
+}
+
+.projects{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+
+/*---------------------- MEDIA QUERRIES --------------*/
+@media screen and (max-width: 700px) {
+
+.desktop{
+    display: none;
+  }
+
+/* .skills{
+    display: block;
+  } */
+.enfant1, .enfant2{
+  margin-left: auto;
+  margin-right: auto ;
+  height: 100%;
+  width: 65vw;
+}
+
+.skills{
+  display: flex;
+  flex-flow: column;
+}
+.enfant2{
+  order: 1;
+}
+.enfant1{
+  order: 2;
+}
+
+
+
+}
