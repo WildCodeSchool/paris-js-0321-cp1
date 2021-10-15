@@ -110,4 +110,45 @@ button {
   background-color: transparent;
 }
 
-/* CODE HERE */
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatarClass {
+  max-width: 30%;
+}
+
+.desktop {
+  display:none;
+}
+
+.skills {
+  display: flex;
+  flex-direction : column-reverse;
+}
+
+.disabled {
+  opacity: 60%;
+}
+
+@media (min-width: 700px) {
+  .desktop {
+    display: block;
+  }
+  .skills {
+    display : flex;
+    flex-direction: row-reverse;
+  }
+  .projects {
+    max-width: 100vw;
+    display: flex;
+  }
+}

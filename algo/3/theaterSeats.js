@@ -20,8 +20,17 @@ exemple :
 ] 
 */
 
+
 function theaterSeats() {
-  // TODO
+  let row = []
+  for (let i = 1; i < 101 ; i++){
+    row.push(row[i]);
+    for(let y = 1; y < row[i].length; y++){
+      row[i].push(`${row[i]} - ${row[y]}`);
+    }
+  }
+  console.log(row);
 }
+
 
 module.exports = theaterSeats;
