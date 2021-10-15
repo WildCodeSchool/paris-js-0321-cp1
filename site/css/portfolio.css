@@ -145,6 +145,12 @@ button {
   opacity: .5;
 }
 
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
 @media screen and (max-width: 700px){
   .introduction {
     display: none;
