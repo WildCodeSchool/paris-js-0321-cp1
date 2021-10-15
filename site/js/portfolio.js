@@ -7,6 +7,9 @@ const elementsPinkText = document.querySelectorAll(".pink-text")
 const linkNavBar = document.querySelectorAll(".menu a")
 
 
+const toolList = document.querySelector("#dev-tools-back-list")
+const addTool = document.querySelector("#addBtn")
+
 avatar.addEventListener("click", () => {
     avatar.src = "image/avatar-bis.svg";
 })
@@ -31,3 +34,10 @@ btnChangeName.addEventListener("click", () => {
         elementsPinkText[i].classList.add("purple-text")
     }
 } )
+
+addTool.addEventListener("click", () => {
+    const newTool = document.querySelector("#tool").value
+    const liTool = document.createElement("li")
+    liTool.appendChild(document.createTextNode(newTool))
+    toolList.appendChild(liTool)
+})
