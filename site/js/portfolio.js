@@ -6,13 +6,18 @@ avatarPicture.addEventListener("click", function() {
 
 const nameText = document.getElementById('name')
 const nameAndColorButton = document.getElementById('name-and-color-button')
-const backGround = document.getElementsByClassName('pink-bg')
+const backGroundColor = document.getElementsByClassName('pink-bg')
+const textColor = document.getElementsByClassName('pink-text')
 
 nameAndColorButton.addEventListener("click", function() {
     let color = prompt("What color would you like ?")
     let newName = prompt("What's your name ?")
-    backGround[0].style.backgroundColor = color
-    backGround[1].style.backgroundColor = color
+    for (let i = 0 ; i < backGroundColor.length ; i++) {
+        backGroundColor[i].style.backgroundColor = color
+    }
+    for (let i = 0 ; i < textColor.length ; i++) {
+        textColor[i].style.color = color
+    }
     nameText.innerHTML = newName
     nameText.style.color = "white"
 })
