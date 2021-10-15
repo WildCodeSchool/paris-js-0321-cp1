@@ -33,11 +33,11 @@
   padding: 0 10%;
   display: flex;
   flex-direction: row;
-  
 }
 
 .column {
   border-left: 1px solid #e6ecf8;
+  width: 33vw;
   border-right: 1px solid #e6ecf8;
   border-bottom: 1px solid #e6ecf8;
   background-color: #ffffff;
