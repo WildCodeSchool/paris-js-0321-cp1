@@ -111,3 +111,55 @@ button {
 }
 
 /* CODE HERE */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  color:#750ff7
+}
+.firstBanner img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: aqua;
+  margin: auto;
+}
+.disabled {
+  color: #750ff7
+}
+
+@media (max-width: 700px) {
+  .introduction {
+    display: none;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 700px) {
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .column:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 12px;
+  } 
+  .column:last-child {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 0px;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+}
