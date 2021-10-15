@@ -127,16 +127,22 @@ button {
   opacity: 0.5;
 }
 
-@media (min-width: 700px) {
-  .projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width:700px) {
+  .projects {
+    flex-direction: row;
+  }
+
+  .box {
+    width: 50%;
+  }
+
   .desktop {
     display: none;
   }
