@@ -4,6 +4,7 @@ const name = document.getElementById("name")
 
 const elementsPinkBg = document.querySelectorAll(".pink-bg")
 const elementsPinkText = document.querySelectorAll(".pink-text")
+const linkNavBar = document.querySelectorAll(".menu a")
 
 
 avatar.addEventListener("click", () => {
@@ -15,6 +16,10 @@ btnChangeName.addEventListener("click", () => {
     const userName = prompt("Enter your name: ")
     name.innerHTML = userName
     name.style.color = "white"
+
+    for(let elem of linkNavBar) {
+        elem.classList.add("purple-text")
+    }
     
     for(let i = 0; i < elementsPinkBg.length; i++) {
         elementsPinkBg[i].classList.remove("pink-bg")
