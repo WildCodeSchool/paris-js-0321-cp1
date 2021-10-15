@@ -41,6 +41,18 @@ const scores = [
 
 function getPoints(array) {
   // TODO
+  let finalScore = 0
+  for(let i = 0; i < array.length; i++) {
+    let tempScore = array[i].split(":")
+    if (tempScore[0] > tempScore[1]) {
+      finalScore += 3
+    } else if (tempScore[0] === tempScore[1]) {
+      finalScore += 1
+    } 
+
+  }
+  return finalScore
 }
+
 
 module.exports = getPoints;

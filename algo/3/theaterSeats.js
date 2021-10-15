@@ -22,6 +22,17 @@ exemple :
 
 function theaterSeats() {
   // TODO
+  const theater = []
+
+  for(let i = 0; i < 26; i++){
+    const theaterLine = []
+    for(let j = 0; j < 100; j++) {
+      theaterLine.push(`${i + 1}-${j + 1}`)
+    }
+    theater.push(theaterLine)
+  }
+
+  return theater
 }
 
 module.exports = theaterSeats;
