@@ -134,6 +134,10 @@ button {
   flex-wrap: wrap;
 }
 
+#name-button:hover {
+  opacity: 0.5;
+}
+
 @media (max-width:700px) {
   .projects {
     flex-direction: row;
