@@ -11,6 +11,7 @@ avatar.addEventListener('click', function() {
 
 const description = document.querySelector('.description');
 const defaultName = document.getElementById('name');
+const background = document.querySelector('.pink-bg');
 const nameButton = document.createElement('button');
 nameButton.classList.add('nameButton');
 nameButton.innerHTML = 'Change Name';
@@ -22,6 +23,8 @@ function changeName() {
     const newName = prompt('Enter a new name:')
     defaultName.innerHTML = `${newName}`;
     defaultName.style.color = 'white';
+    background.style.backgroundColor = '#750ff7';
+
 
 }
 
