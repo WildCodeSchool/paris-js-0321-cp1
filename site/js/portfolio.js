@@ -5,7 +5,7 @@ const name = document.getElementById("name")
 const elementsPinkBg = document.querySelectorAll(".pink-bg")
 const elementsPinkText = document.querySelectorAll(".pink-text")
 const linkNavBar = document.querySelectorAll(".menu a")
-
+const btnModifyFrontList = document.querySelector("#btnModifyFrontList")
 
 const toolList = document.querySelector("#dev-tools-back-list")
 const addTool = document.querySelector("#addBtn")
@@ -34,6 +34,23 @@ btnChangeName.addEventListener("click", () => {
         elementsPinkText[i].classList.add("purple-text")
     }
 } )
+
+btnModifyFrontList.addEventListener("click", () => {
+    const lis = document.querySelectorAll("#front-dev-tools li")
+    const ul = document.querySelector("#front-dev-tools")
+    const tools = ["VS Code", "GitHub", "Terminal"]
+    for(let i = 0; i < lis.length; i++) {
+        li = lis[i]
+        li.remove()
+    }
+
+    for(let i = 0; i < tools.length; i++) {
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(tools[i]))
+        ul.appendChild(li)
+    }   
+    
+})
 
 addTool.addEventListener("click", () => {
     const newTool = document.querySelector("#tool").value
