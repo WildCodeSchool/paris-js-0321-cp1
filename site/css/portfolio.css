@@ -133,12 +133,15 @@ button {
 
 .skills {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
 @media screen and (max-width: 700px){
   .introduction {
     display: none;
+  }
+
+  .skills {
+    flex-direction: column-reverse;
   }
 }
