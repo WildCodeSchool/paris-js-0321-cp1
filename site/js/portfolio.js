@@ -26,3 +26,19 @@ nameAndColorButton.addEventListener("click", function() {
     nameText.style.color = "white"
 })
 
+const frontDevToolsList = document.getElementById('front-dev-tools')
+const frontDevToolsButton = document.getElementById('front-dev-tools-button')
+const listToClear = document.querySelectorAll('.front-dev-tool')
+
+frontDevToolsButton.addEventListener('click', function() {
+    for (let item of listToClear) {
+        item.remove()
+    }
+
+    const newDevList = ['VSCode', 'Github', 'Google']
+    for (let i = 0 ; i < newDevList.length ; i++) {
+        let item = document.createElement('li')
+        item.innerHTML = newDevList[i]
+        frontDevToolsList.appendChild(item)
+    }
+})
