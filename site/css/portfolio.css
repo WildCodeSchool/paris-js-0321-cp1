@@ -1,3 +1,40 @@
+@media screen and (max-width: 700px) {
+  .desktop{
+    display: none;
+  }
+
+  .skills {
+    margin-top: -30px;
+    border-radius: 12px;
+    padding: 0 10%;
+    flex-direction: column-reverse;
+  }
+
+  .column{
+    width: auto;
+  }
+  
+}
+
+.navbar{
+  justify-content: space-between;
+}
+
+.introduction{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills {
+  justify-content: space-around;
+  display: flex;
+  margin-top: -30px;
+  border-radius: 12px;
+  padding: 0 10%;
+  flex-direction: row-reverse;
+}
+
 .pink-bg {
   background-color: pink;
 }
@@ -27,11 +64,6 @@
   margin: 80px 0 -5px 0;
 }
 
-.skills {
-  margin-top: -30px;
-  border-radius: 12px;
-  padding: 0 10%;
-}
 
 .column {
   border-left: 1px solid #e6ecf8;
@@ -42,6 +74,7 @@
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
+  width: 100%;
 }
 
 .column:first-child {
