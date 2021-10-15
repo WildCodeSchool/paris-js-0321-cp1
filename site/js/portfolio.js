@@ -9,5 +9,6 @@ btn.innerHTML = "Modify text and color";
 btn.addEventListener('click', function(){
    const answer = prompt("Enter your name");
    document.getElementById('name').innerText = answer;
+   document.getElementById('name').style.color= "white";
    
 })
