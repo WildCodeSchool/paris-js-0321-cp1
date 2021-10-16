@@ -153,7 +153,10 @@ button {
     align-items:center;
 
   }
+  .disabled{
+    opacity: 0;
 
+  }
 
 }
 /* more 700px*/
@@ -172,6 +175,10 @@ button {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+
+  }
+  .disabled{
+    opacity: 0;
 
   }
 
