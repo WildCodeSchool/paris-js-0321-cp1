@@ -21,16 +21,21 @@ exemple :
 */
 
 function theaterSeats() {
-    const numberOne=[];
-    const numberTwo=[];
-      for (let i=0;i<100;i++){
+
+  const theaterSeats=[];
+  
+  /*const rowNumber=[];
+  const columnNumber=[];*/
+      for (let i=1;i<=26;i++){
         const row=[]; 
-        for (let j=0; j<100;j++){
-          row.push (`${numberOne[i]} - ${numberTwo[j]}`);
+        for (let j=1; j<=100;j++){
+          row.push(`${[i]}-${[j]}`);
           
-          }
-theaterSeats.push(row);
-}
+        }
+
+        
+  theaterSeats.push(row);
+      }
 return theaterSeats
 }
 
