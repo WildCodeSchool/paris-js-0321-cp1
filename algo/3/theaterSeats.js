@@ -22,23 +22,14 @@ exemple :
 
 function theaterSeats() {
 
-  const theaterSeats=[];
-  
-  /*const rowNumber=[];
-  const columnNumber=[];*/
-      for (let i=1;i<=26;i++){
-        const row=[]; 
-        for (let j=1; j<=100;j++){
-          row.push(`${[i]}-${[j]}`);
-          
-        }
-
-        
-  theaterSeats.push(row);
-      }
-return theaterSeats
+  const theaterSeats = [];
+  for (let i = 1; i <= 26; i++) {
+    const row = [];
+    for (let j = 1; j <= 100; j++) {
+      row.push(`${[i]}-${[j]}`);
+    }
+    theaterSeats.push(row);
+  }
+  return theaterSeats
 }
-
-
-
 module.exports = theaterSeats;

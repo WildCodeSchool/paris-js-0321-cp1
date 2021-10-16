@@ -40,7 +40,26 @@ const scores = [
 ];
 
 function getPoints(array) {
-  // TODO
+  let resultatPoints = 0;
+  //pour chaque ligne donc i est le numero d'ordre de match
+  for (let i = 0; i < scores.length; i++) {
+    //pour chaque match
+    for (let j = 0; j <2; j++) {
+      let teamUsPoints;
+      teamsUsPoints = parseInt(scores[i][0]);
+      let oppositeTeamPoints;
+      oppositeTeamPoints = parseInt(scores[i][1]);
+      if (teamsUsPoints > oppositeTeamPoints) {
+        resultatPoints = resultatPoints + 3;
+      } else if (teamsUsPoints === oppositeTeamPoints) {
+        resultatPoints = resultatPoints + 1;
+      } else if (teamsUsPoints < oppositeTeamPoints) {
+        resultatPoints = resultatPoints + 0;
+      }
+    }
+  }
+  return resultatPoints;
 }
 
 module.exports = getPoints;
+/** JavaScript: tableau 2 dimensions de taille 5 */
