@@ -1,7 +1,7 @@
 /*
-[EN] Here's an array of persons
+[EN] Here's an personsay of persons
 You should write the findAdult function, that returns 
-a new array with 2 sub-arrays inside : 
+a new personsay with 2 sub-personsays inside : 
 - The first one with only adult women
 - The second one with only adult men
 (consider that an adult is a person who is at least 18)
@@ -33,8 +33,21 @@ const persons = [
   { name: 'Penelope Cruz', age: 47, sex: 'female' },
 ];
 
-function findAdults(arr) {
-  // TODO
+function findAdults(persons) {
+  let adults = [];
+  let adultWomen = [];
+  let adultMen = [];
+  for (let i=0; i<persons.length; i++) {
+    if ((persons[i])['age']>17 && (persons[i])['sex']==='female'){
+      adultWomen.push(persons[i]);
+    }
+    else if ((persons[i])['age']>17 && (persons[i])['sex']==='male'){
+      adultMen.push(persons[i]);
+    }
+  }
+  adults.push(adultWomen);
+  adults.push(adultMen);
+  return(adults);
 }
 
 module.exports = findAdults;

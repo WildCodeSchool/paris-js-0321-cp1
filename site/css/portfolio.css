@@ -98,6 +98,11 @@
 #back-skill{
   order: 1;
 }
+
+#modified-front-dev-tools {
+  display: none;
+}
+
 @media screen and (min-width: 700px) {
   .skills {
     display: flex;
@@ -122,6 +127,10 @@ img {
 
 .projects a {
   color: #750ff7;
+}
+
+.disabled {
+  opacity: 0.5;
 }
 
 p {
@@ -156,4 +165,12 @@ button {
 
 .modify-btn {
   background-color: transparent;
+}
+
+@media screen and (min-width: 700px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

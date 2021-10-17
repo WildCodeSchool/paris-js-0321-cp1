@@ -39,8 +39,17 @@ const scores = [
   '3:3',
 ];
 
-function getPoints(array) {
-  // TODO
+function getPoints(scores) {
+  let points = 0;
+  for (let i=0; i<scores.length; i++){
+    if (scores[i].split(':')[0] > scores[i].split(':')[1]) {
+      points += 3 ;
+    }
+    else if (scores[i].split(':')[0] === scores[i].split(':')[1]) {
+      points += 1 ;
+    }
+  }
+  return (points)
 }
 
 module.exports = getPoints;

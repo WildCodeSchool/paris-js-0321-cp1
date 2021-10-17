@@ -20,3 +20,22 @@ changeButton.onclick = function(){
     pinkText[i].style.color = getColor;
   }
 }
+
+const modifyButton = document.getElementById('modify-button');
+modifyButton.onclick = function(){
+  const devTools = document.getElementById('front-dev-tools');
+  devTools.style.display = 'none';
+  const modifiedDevTools = document.getElementById('modified-front-dev-tools');
+  modifiedDevTools.style.display = "block";
+}
+
+const devtoolsButton = document.getElementById('devtools-button');
+devtoolsButton.onclick = function(){
+  const inputValue = document.getElementById('devtools-input').value;
+  const devtoolsList = document.getElementById('dev-tools-back-list')
+  if (inputValue !== '') {
+    const newDevtool = document.createElement("li");
+    newDevtool.innerHTML = inputValue;
+    devtoolsList.appendChild(newDevtool);
+  }
+}
