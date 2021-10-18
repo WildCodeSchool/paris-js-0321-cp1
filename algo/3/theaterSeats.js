@@ -21,24 +21,19 @@ exemple :
 */
 
 function theaterSeats() {
-  let seats = [1, 2, 3, 4, 5, 6, 7, 8, 100];
-    let rows = [1, 2, 3, 4, 5, 6, 7, 8, 100];
+  let rows = 26;
+  let seats = 100;
+  let theater = [[]];
 
-    const theater = [];
-    
-    for(let i = 0; i<seats.length; i++){
-        let arrayOne = [];
-        // console.log (columns[i])
-            for (let j = 0; j < rows.length; j++){
-            // console.log(rows[j]);
-            arrayOne.push(`${seats[i]} - ${rows[j]}`)
-        }
-        theater.push(arrayOne)
-    } 
-    console.log(theater)
-
-    return theater;
+  for(let i=1; i <26; i++) {
+    theater.push([]);
+  }
+  for (let i=0; i<26; i++){
+    for (let j=1; j<=100; j++){
+      theater[i].push((i+1).toString() + '-' + j.toString());
+    }
+  }
+  return theater;
 }
-
 
 module.exports = theaterSeats;
