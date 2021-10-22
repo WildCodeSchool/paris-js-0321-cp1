@@ -18,8 +18,8 @@ Les années 2004, 2016 et 2020 sont bissextiles.
 Autre rappel: Tu dois utiliser l'opérateur modulo (%) pour vérifier si un nombre est divisible par un autre.
 */
 
-function isLeapYear(year) {
-  // TODO
-}
+// function isLeapYear(year) {
+// return year % 4 === 0 && year % 100 !== 0 || year % 400 === 0
+// }
 
 module.exports = isLeapYear;

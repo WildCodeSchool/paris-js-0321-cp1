@@ -112,16 +112,18 @@ button {
 
 /* CODE HERE */
 
+.navbar {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
 
-.menutodo {
+}
+
+/* .menutodo {
   margin-right: -150px;
 
-}
-.menu {
+} */
 
-  display: flex;
-float: right;
-}
 
 .title-avatar {
   display: block;
