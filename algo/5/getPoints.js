@@ -40,7 +40,25 @@ const scores = [
 ];
 
 function getPoints(array) {
-  // TODO
+const arrayTmp = array.map(score => {
+  return score.split(':').map(string => {
+    return parseInt(string)
+})
+})
+let result = 0
+arrayTmp.forEach(num => {
+if(num[0] > num[1]){
+  result ==3
+}else if (
+num[0] === num[1]) {
+  result ==1
+}
+})
+return result
 }
 
+
+// console.log(arrayTmp);
+// }
+tPoints(scores)
 module.exports = getPoints;
